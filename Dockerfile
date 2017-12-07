@@ -1,9 +1,9 @@
-# docker build --tag web-app-bin .
+# docker build --tag web-app .
 FROM dmytroorlov/jdk
 
 EXPOSE 9000
 
-HEALTHCHECK --interval=3s --timeout=2s --retries=10 \
+HEALTHCHECK --interval=10s --timeout=1s --retries=3 \
   CMD curl --silent --fail http://localhost:9000/health || exit 1
 
 WORKDIR /opt
