@@ -3,7 +3,7 @@ FROM dmytroorlov/jdk
 
 EXPOSE 9000
 
-HEALTHCHECK --interval=5s --timeout=2s --retries=12 \
+HEALTHCHECK --interval=3s --timeout=2s --retries=10 \
   CMD curl --silent --fail http://localhost:9000/health || exit 1
 
 WORKDIR /opt
