@@ -5,7 +5,7 @@ lazy val `web-app-seed` = (project in file("."))
     inThisBuild(Seq(
       version := "1.0-SNAPSHOT",
       organization := "com.github.dmytroorlov",
-      scalaVersion := "2.12.4"
+      scalaVersion := "2.12.5"
     ))
   )
   .settings(
