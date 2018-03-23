@@ -12,7 +12,7 @@ lazy val `web-app-seed` = (project in file("."))
     Defaults.itSettings ++ Seq(
       libraryDependencies ++= Seq(
         guice,
-        "io.monix" %% "monix" % "2.3.0",
+        "io.monix" %% "monix" % "3.0.0-RC1",
         "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2",
           "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % "test,it"
       )
